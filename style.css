@@ -40,14 +40,10 @@ h1 {
     width: 200px;
     height: 200px;
     border: 1px solid #ddd;
-    filter: url(filters.svg#grayscale);
-    filter: gray;
-    -webkit-filter: grayscale(1);
 }
 
 #links li a:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
+    background-position: -200px 0px;
     color: red;
 }
 
@@ -60,9 +56,9 @@ h1 {
     line-height: 30px;
 }
 
-#links li:nth-child(1) a { background: url(img/kino.jpg); }
-#links li:nth-child(2) a { background: url(img/kultura.jpg); }
-#links li:nth-child(3) a { background: url(img/knihovna.jpg); }
+#links li:nth-child(1) a { background-image: url(img/kino.jpg); }
+#links li:nth-child(2) a { background-image: url(img/kultura.jpg); }
+#links li:nth-child(3) a { background-image: url(img/knihovna.jpg); }
 
 .column {
     width: 200px;
